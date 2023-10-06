@@ -21,3 +21,7 @@ Change log
 - React memoization,
     - https://react.dev/reference/react/useMemo
     - https://react.dev/reference/react/memo
+
+04 Extract the state from presentational components
+
+- React custom hooks, https://react.dev/learn/reusing-logic-with-custom-hooks
