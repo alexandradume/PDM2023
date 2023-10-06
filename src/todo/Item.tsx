@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
+import { getLogger } from '../core';
+
+const log = getLogger('Item');
 
 interface ItemProps {
   id?: string;
@@ -6,9 +9,10 @@ interface ItemProps {
 }
 
 const Item: React.FC<ItemProps> = ({ id, text }) => {
+  log(`render ${text}`);
   return (
     <div>{text}</div>
   );
 };
 
-export default Item;
+export default memo(Item);
