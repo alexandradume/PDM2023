@@ -41,3 +41,7 @@ Change log
 - Sharing state between components, https://react.dev/learn/sharing-state-between-components
 - Passing data deeply with context, https://react.dev/learn/passing-data-deeply-with-context
 - React use context hook, https://react.dev/reference/react/useContext
+
+08 Receive server-side notifications via web sockets
+
+- Writing web socket client apps, https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
