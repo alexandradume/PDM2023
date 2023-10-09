@@ -35,3 +35,9 @@ Change log
 06 Use reducers to manage complex behaviour
 
 - React reducer hook, https://react.dev/reference/react/useReducer
+
+07 Lift state up using context providers
+
+- Sharing state between components, https://react.dev/learn/sharing-state-between-components
+- Passing data deeply with context, https://react.dev/learn/passing-data-deeply-with-context
+- React use context hook, https://react.dev/reference/react/useContext
