@@ -28,7 +28,7 @@ const RestaurantEdit: React.FC<RestaurantEditProps> = ({ history, match }) => {
   const { restaurants, saving, savingError, saveRestaurant } =
     useContext(RestaurantContext);
   const [name, setName] = useState("");
-  const [stars, setStars] = useState("");
+  const [stars, setStars] = useState(0);
 
   const [restaurant, setRestaurant] = useState<RestaurantProps>();
   useEffect(() => {
@@ -71,7 +71,7 @@ const RestaurantEdit: React.FC<RestaurantEditProps> = ({ history, match }) => {
           <IonLabel>Number of Stars:</IonLabel>
           <IonInput
             value={stars}
-            onIonChange={(e) => setStars(e.detail.value || "")}
+            onIonChange={(e) => setStars(parseInt(e.detail.value || "0", 10))}
           />
         </IonItem>
         <IonLoading isOpen={saving} />

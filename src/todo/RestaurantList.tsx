@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { RouteComponentProps } from "react-router";
+import "./style.css";
 import {
   IonContent,
   IonFab,
@@ -26,8 +27,8 @@ const RestaurantList: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>My App</IonTitle>
+        <IonToolbar color="tertiary">
+          <IonTitle>Alexandra's App</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -49,7 +50,10 @@ const RestaurantList: React.FC<RouteComponentProps> = ({ history }) => {
           <div>{fetchingError.message || "Failed to fetch restaurants"}</div>
         )}
         <IonFab vertical="bottom" horizontal="end" slot="fixed">
-          <IonFabButton onClick={() => history.push("/restaurant")}>
+          <IonFabButton
+            color="medium"
+            onClick={() => history.push("/restaurant")}
+          >
             <IonIcon icon={add} />
           </IonFabButton>
         </IonFab>
