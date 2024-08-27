@@ -1,5 +1,5 @@
 # PDM2023
-Alexandra's App
+Alexandra's App (Ionic mini application)
 My Entity is Restaurant: id(string), name(string), number of stars as number(number)
 I used TypeScript and Ionic to create an application that:
   * generates some restaurants that have an id, name and number of stars
